@@ -22,8 +22,8 @@ export default function OrgKosten() {
         <div className="prose">
           <h2>Organisation</h2>
           <p>
-            Um unsere Kinder kümmern sich zwei Erzieherinnen, eine
-            Kinderpflegerin und eine Praktikantin. Unsere Räumlichkeiten bestehen
+            Um unsere Kinder kümmern sich im Regelfall zwei Erzieher:innen, eine
+            Aushilfe und manchmal ein:e Praktikant:in. Unsere Räumlichkeiten bestehen
             aus einem großen Ladengeschäft (Hochparterre), einem
             Toberaum/Schlafraum und einer gemütlichen, großen Küche, in der die
             gemeinsamen Mahlzeiten eingenommen werden. Außerdem gibt es einen
