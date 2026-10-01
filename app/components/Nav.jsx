@@ -9,9 +9,7 @@ const links = [
   { href: "/", label: "Über uns" },
   { href: "/konzept", label: "Konzept" },
   { href: "/organisation-kosten", label: "Organisation & Kosten" },
-  { href: "/kontakt", label: "Kontakt" },
   { href: "/stellenangebote", label: "Stellenangebote" },
-  { href: "/mitglieder-bereich", label: "Mitglieder-Bereich" },
 ];
 
 export default function Nav() {

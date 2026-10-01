@@ -22,6 +22,7 @@ export default function Footer() {
           <Link href="/konzept">Konzept</Link>
           <Link href="/organisation-kosten">Organisation & Kosten</Link>
           <Link href="/anmeldung">Anmeldung</Link>
+          <Link href="/kontakt">Kontakt</Link>
           <Link href="/stellenangebote">Stellenangebote</Link>
           <Link href="/mitglieder-bereich">Mitglieder-Bereich</Link>
         </div>
