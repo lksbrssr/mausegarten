@@ -22,7 +22,7 @@ export default function OrgKosten() {
         <div className="prose">
           <h2>Organisation</h2>
           <p>
-            Um unsere Kinder kümmern sich im Regelfall zwei Erzieher:innen, eine
+            Um unsere Kinder kümmern sich im Regelfall drei Erzieherinnen, eine
             Aushilfe und manchmal ein:e Praktikant:in. Unsere Räumlichkeiten bestehen
             aus einem großen Ladengeschäft (Hochparterre), einem
             Toberaum/Schlafraum und einer gemütlichen, großen Küche, in der die
