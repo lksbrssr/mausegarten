@@ -408,6 +408,8 @@ table.fees td:first-child, table.fees th:first-child { text-align: left; backgro
   font-weight: 700;
   letter-spacing: 0.03em;
 }
+.doclist .ic.doc { background: var(--teal); }
+.doclist .ic.folder { background: var(--sand); color: var(--ink); font-size: 0.75rem; }
 .doclist small { display: block; font-weight: 400; color: var(--ink-soft); font-size: 0.82rem; }
 
 /* ---------- Form ---------- */
