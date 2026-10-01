@@ -1,21 +1,12 @@
 import Link from "next/link";
-import {
-  HeroScene,
-  SpotLeaf,
-  SpotHouse,
-  SpotBlocks,
-  SpotMail,
-  SpotWork,
-  SpotPhone,
-} from "./components/Papercut";
 import OpeningHours from "./components/OpeningHours";
 
 const cards = [
-  { href: "/konzept", label: "Pädagogik", title: "Unser Konzept", text: "Situationsorientiert, liebevoll, viel draußen — und mit aktiver Mitarbeit der Eltern.", Art: SpotLeaf, pill: "sage" },
-  { href: "/organisation-kosten", label: "Alltag", title: "Organisation & Kosten", text: "Gruppe, Räume, Buchungszeiten und die Beiträge nach dem EKI-Plus-Modell.", Art: SpotHouse, pill: "sand" },
-  { href: "/anmeldung", label: "Platz finden", title: "Anmeldung", text: "Wie die Platzvergabe läuft und wie Ihr Euch mit unserem Formular bewerbt.", Art: SpotBlocks, pill: "lime" },
-  { href: "/kontakt", label: "Hallo sagen", title: "Kontakt", text: "Adresse, E-Mail und Lage inmitten der wunderschönen Au.", Art: SpotMail, pill: "sky" },
-  { href: "/stellenangebote", label: "Mitarbeiten", title: "Stellen & Praktika", text: "Wir suchen Verstärkung und bieten Praktikumsplätze in einem tollen Team.", Art: SpotWork, pill: "sage" },
+  { href: "/konzept", label: "Pädagogik", title: "Unser Konzept", text: "Situationsorientiert, liebevoll, viel draußen — und mit aktiver Mitarbeit der Eltern.", img: "/images/gen/konzept.jpeg", pill: "sage" },
+  { href: "/organisation-kosten", label: "Alltag", title: "Organisation & Kosten", text: "Gruppe, Räume, Buchungszeiten und die Beiträge nach dem EKI-Plus-Modell.", img: "/images/gen/organisation.jpeg", pill: "sand" },
+  { href: "/anmeldung", label: "Platz finden", title: "Anmeldung", text: "Wie die Platzvergabe läuft und wie Ihr Euch mit unserem Formular bewerbt.", img: "/images/gen/anmeldung.jpeg", pill: "lime" },
+  { href: "/kontakt", label: "Hallo sagen", title: "Kontakt", text: "Adresse, E-Mail und Lage inmitten der wunderschönen Au.", img: "/images/gen/kontakt.jpeg", pill: "sky" },
+  { href: "/stellenangebote", label: "Mitarbeiten", title: "Stellen & Praktika", text: "Wir suchen Verstärkung und bieten Praktikumsplätze in einem tollen Team.", img: "/images/gen/stellenangebote.jpeg", pill: "sage" },
 ];
 
 export default function Home() {
@@ -37,7 +28,9 @@ export default function Home() {
             <Link href="/konzept" className="btn ghost">Unser Konzept</Link>
           </div>
         </div>
-        <div className="hero-art"><HeroScene /></div>
+        <div className="hero-art">
+          <img src="/images/gen/hero.jpeg" alt="Papierschnitt-Illustration der Isarauen: sanfte Hügel, ein Fluss und zwei spielende Kleinkinder" />
+        </div>
       </section>
 
       <div className="callout sage">
@@ -80,9 +73,9 @@ export default function Home() {
               <span className="pill lime">Alles auf einen Blick</span>
             </div>
             <div className="grid cols-3">
-              {cards.map(({ href, label, title, text, Art, pill }) => (
+              {cards.map(({ href, label, title, text, img, pill }) => (
                 <Link key={href} href={href} className="card">
-                  <div className="art"><Art /></div>
+                  <div className="art"><img src={img} alt={title} /></div>
                   <span className={`pill ${pill}`}>{label}</span>
                   <h3>{title}</h3>
                   <p>{text}</p>

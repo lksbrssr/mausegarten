@@ -1,4 +1,3 @@
-import { SpotWork } from "../components/Papercut";
 import OpeningHours from "../components/OpeningHours";
 
 export const metadata = { title: "Stellenangebote & Praktika" };
@@ -15,7 +14,7 @@ export default function Stellenangebote() {
             Kinderkrippe mitten in der Au.
           </p>
         </div>
-        <div className="art"><SpotWork /></div>
+        <div className="art"><img src="/images/gen/stellenangebote.jpeg" alt="Papierschnitt: zwei freundliche Betreuerinnen mit Schürzen" /></div>
       </section>
 
       <div className="layout">
@@ -27,7 +26,7 @@ export default function Stellenangebote() {
           </p>
           <p>
             <a
-              href="https://www.mausegarten.de/.cm4all/uproc.php/0/Stellenangebote%2C%20Praktika%2C%20Aushilfen/Der%20Mausegarten%20such%20eine%20Aushilfe.pdf?cdp=a&_=182352079a8"
+              href="/dokumente/stellenangebot-aushilfe.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"

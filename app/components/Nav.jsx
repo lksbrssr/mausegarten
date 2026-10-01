@@ -9,14 +9,16 @@ const links = [
   { href: "/", label: "Über uns" },
   { href: "/konzept", label: "Konzept" },
   { href: "/organisation-kosten", label: "Organisation & Kosten" },
-  { href: "/anmeldung", label: "Anmeldung" },
   { href: "/kontakt", label: "Kontakt" },
   { href: "/stellenangebote", label: "Stellenangebote" },
+  { href: "/mitglieder-bereich", label: "Mitglieder-Bereich" },
 ];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const isActive = (href) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
   return (
     <header className="topbar">
       <div className="topbar-inner">
@@ -33,19 +35,23 @@ export default function Nav() {
           <span /><span /><span />
         </button>
         <nav className={`nav ${open ? "open" : ""}`}>
-          {links.map((l) => {
-            const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
-            return (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={active ? "active" : ""}
-                onClick={() => setOpen(false)}
-              >
-                {l.label}
-              </Link>
-            );
-          })}
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className={isActive(l.href) ? "active" : ""}
+              onClick={() => setOpen(false)}
+            >
+              {l.label}
+            </Link>
+          ))}
+          <Link
+            href="/anmeldung"
+            className={`nav-cta ${isActive("/anmeldung") ? "active" : ""}`}
+            onClick={() => setOpen(false)}
+          >
+            Anmeldung →
+          </Link>
         </nav>
       </div>
     </header>

@@ -1,4 +1,3 @@
-import { SpotHouse } from "../components/Papercut";
 import OpeningHours from "../components/OpeningHours";
 
 export const metadata = { title: "Organisation & Kosten" };
@@ -15,7 +14,7 @@ export default function OrgKosten() {
             Innenhof mit Sandkasten — mitten in der Au.
           </p>
         </div>
-        <div className="art"><SpotHouse /></div>
+        <div className="art"><img src="/images/gen/organisation.jpeg" alt="Papierschnitt: ein kleines Haus mit rotem Dach und Baum auf einem Hügel" /></div>
       </section>
 
       <div className="layout">

@@ -1,4 +1,3 @@
-import { SpotMail } from "../components/Papercut";
 import OpeningHours from "../components/OpeningHours";
 
 export const metadata = { title: "Kontakt" };
@@ -15,7 +14,7 @@ export default function Kontakt() {
             Isarauen — und mit dem MVV gut und schnell zu erreichen.
           </p>
         </div>
-        <div className="art"><SpotMail /></div>
+        <div className="art"><img src="/images/gen/kontakt.jpeg" alt="Papierschnitt: ein Briefumschlag mit Kartennadel" /></div>
       </section>
 
       <div className="layout">

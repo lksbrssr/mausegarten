@@ -1,4 +1,3 @@
-import { SpotLeaf } from "../components/Papercut";
 import OpeningHours from "../components/OpeningHours";
 
 export const metadata = { title: "Konzept" };
@@ -15,7 +14,7 @@ export default function Konzept() {
             raus in die Natur.
           </p>
         </div>
-        <div className="art"><SpotLeaf /></div>
+        <div className="art"><img src="/images/gen/konzept.jpeg" alt="Papierschnitt: ein Setzling im Topf, Sonne und Blumen" /></div>
       </section>
 
       <div className="layout">

@@ -1,5 +1,5 @@
-import { SpotBlocks } from "../components/Papercut";
 import OpeningHours from "../components/OpeningHours";
+import AnmeldeFormular from "../components/AnmeldeFormular";
 
 export const metadata = { title: "Anmeldung" };
 
@@ -15,7 +15,7 @@ export default function Anmeldung() {
             Plätze frei!
           </p>
         </div>
-        <div className="art"><SpotBlocks /></div>
+        <div className="art"><img src="/images/gen/anmeldung.jpeg" alt="Papierschnitt: bunte Bauklötze als kleiner Turm" /></div>
       </section>
 
       <div className="layout">
@@ -52,7 +52,7 @@ export default function Anmeldung() {
             81541 München
           </div>
           <p>
-            <a href="https://www.mausegarten.de/.cm4all/uproc.php/0/MG_bewerbung_2022.pdf?cdp=a&amp;_=184a5e55cd8" target="_blank" rel="noopener noreferrer" className="btn">
+            <a href="/dokumente/anmeldung-mausegarten.pdf" target="_blank" rel="noopener noreferrer" className="btn">
               PDF-Anmeldeformular herunterladen →
             </a>
           </p>
@@ -60,6 +60,9 @@ export default function Anmeldung() {
             Bitte nutzt aus Datenschutzgründen nur unser Anmeldeformular. Schickt
             uns bitte keine Fotos und persönlichen Briefe. Vielen Dank!
           </p>
+
+          <h2 id="formular">Online-Bewerbung</h2>
+          <AnmeldeFormular />
         </div>
 
         <aside className="sidebar">
