@@ -22,11 +22,15 @@ const incomes = [
   { label: "über 80.000 €", fees: [145, 162, 179, 196, 213, 230, 250] },
 ];
 
+const OFFERED_MAX = 3; // Mausegarten bietet max. "bis 7 Std." an
+
 export default function KrippenGebuehren() {
   const [t, setT] = useState(3); // Standard: bis 7 Std.
   const [inc, setInc] = useState(3); // Standard: über 80.000 €
   const fee = incomes[inc].fees[t];
   const pct = (t / (times.length - 1)) * 100;
+  const offeredPct = (OFFERED_MAX / (times.length - 1)) * 100;
+  const trackBg = `linear-gradient(to right, var(--teal) 0%, var(--teal) ${pct}%, var(--cream-deep) ${pct}%, var(--cream-deep) ${offeredPct}%, #ded7c7 ${offeredPct}%, #ded7c7 100%)`;
 
   return (
     <div className="fee-slider">
@@ -62,13 +66,13 @@ export default function KrippenGebuehren() {
         max={times.length - 1}
         step={1}
         value={t}
-        onChange={(e) => setT(Number(e.target.value))}
+        onChange={(e) => setT(Math.min(Number(e.target.value), OFFERED_MAX))}
         aria-label="Buchungszeit wählen"
-        style={{ "--pct": `${pct}%` }}
+        style={{ background: trackBg }}
       />
       <div className="fee-slider-scale">
         <span>bis 4 Std.</span>
-        <span>über 9 Std.</span>
+        <span className="muted">über 7 Std.: nicht buchbar</span>
       </div>
 
       <p className="fee-slider-note">
@@ -77,8 +81,15 @@ export default function KrippenGebuehren() {
         monatlich <strong>95 € Essensgeld</strong> und{" "}
         <strong>10 € Vereinsbeitrag</strong>. Mit München-Pass, bei Bezug von
         Sozialleistungen oder als Geschwisterkind kann sich der Beitrag weiter
-        reduzieren – teils auf 0 €. Bei uns sind Buchungszeiten von 4–7 Std.
-        möglich.
+        reduzieren – teils auf 0 €. Beim Mausegarten sind Buchungszeiten von{" "}
+        <strong>4–7 Std. pro Tag</strong> möglich – längere Zeiten (ausgegraut)
+        bieten wir nicht an.
+      </p>
+
+      <p className="fee-disclaimer">
+        ℹ️ Diese Angaben sind eine <strong>Orientierungshilfe ohne Gewähr</strong>.
+        Die tatsächliche Einstufung und Bedürftigkeitsprüfung nimmt die Stadt
+        München vor – maßgeblich sind deren Bescheide.
       </p>
     </div>
   );

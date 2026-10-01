@@ -41,15 +41,17 @@ export default function OrgKosten() {
 
           <h2>Kosten</h2>
           <div className="costgrid">
+            <div className="box"><div className="big">bis zu 196 €</div><div className="lbl">Besuchsgebühr pro Monat*</div></div>
             <div className="box"><div className="big">95 €</div><div className="lbl">Monatl. Essensgeld</div></div>
-            <div className="box"><div className="big">10 €</div><div className="lbl">Vereinsbeitrag pro Monat*</div></div>
+            <div className="box"><div className="big">10 €</div><div className="lbl">Vereinsbeitrag pro Monat**</div></div>
             <div className="box"><div className="big">250 €</div><div className="lbl">Einmalige Aufnahmegebühr</div></div>
             <div className="box"><div className="big">500 €</div><div className="lbl">Einmalige Beitragskaution</div></div>
           </div>
           <p style={{ fontSize: "0.9rem", color: "var(--ink-soft)" }}>
-            *Der Vereinsbeitrag (10 €/Monat) wird als jährlicher Beitrag gezahlt –
-            jeweils zum Start und dann zum neuen Jahr. Hinzu kommt die monatliche
-            Besuchsgebühr (Beitrag) – siehe Rechner unten.
+            *Die Besuchsgebühr ist einkommensabhängig gestaffelt (0–196 € je nach
+            Einkommen und Buchungszeit) – siehe Rechner unten.<br />
+            **Der Vereinsbeitrag (10 €/Monat) wird als jährlicher Beitrag gezahlt –
+            jeweils zum Start und dann zum neuen Jahr.
           </p>
 
           <p>
