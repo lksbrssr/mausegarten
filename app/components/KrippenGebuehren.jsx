@@ -24,7 +24,7 @@ export default function KrippenGebuehren() {
     <div className="fee-slider">
       <div className="fee-slider-head">
         <div>
-          <div className="mono">Buchungszeit</div>
+          <div className="mono">Buchungszeit pro Tag</div>
           <div className="fee-slider-time">{s.label}</div>
         </div>
         <div className="fee-slider-amount">
