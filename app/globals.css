@@ -385,6 +385,56 @@ table.fees td:first-child, table.fees th:first-child { text-align: left; backgro
 
 .eyebrow { font-family: Georgia, serif; font-style: italic; color: var(--teal-dark); font-size: 1rem; }
 
+/* ---------- Fee slider ---------- */
+.fee-slider {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin: 16px 0 10px;
+}
+.fee-slider-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.fee-slider-time { font-family: Georgia, serif; font-size: 1.5rem; line-height: 1.1; }
+.fee-slider-amount { text-align: right; display: flex; flex-direction: column; gap: 2px; }
+.fee-slider-big { font-family: Georgia, serif; font-size: 1.9rem; color: var(--teal-dark); line-height: 1; }
+.fee-range {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--teal) var(--pct, 50%), var(--cream-deep) var(--pct, 50%));
+  outline: none;
+  cursor: pointer;
+}
+.fee-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+.fee-range::-moz-range-thumb {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+.fee-slider-scale { display: flex; justify-content: space-between; margin-top: 8px; }
+.fee-slider-scale span { font-size: 0.78rem; color: var(--ink-soft); }
+.fee-slider-note { margin-top: 16px; font-size: 0.9rem; color: var(--ink-soft); }
+
 /* ---------- Document download list ---------- */
 .doclist { list-style: none; margin: 14px 0 6px; padding: 0; display: grid; gap: 10px; }
 .doclist a {

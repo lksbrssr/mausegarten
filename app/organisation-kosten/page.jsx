@@ -1,4 +1,5 @@
 import OpeningHours from "../components/OpeningHours";
+import KrippenGebuehren from "../components/KrippenGebuehren";
 
 export const metadata = { title: "Organisation & Kosten" };
 
@@ -55,21 +56,17 @@ export default function OrgKosten() {
             fällt monatlich eine Essenspauschale an.
           </p>
 
-          <h2>Besuchsgebühren ab 1.9.2024</h2>
-          <div className="table-scroll">
-            <table className="fees">
-              <thead>
-                <tr>
-                  <th></th><th>1–2</th><th>2–3</th><th>3–4</th><th>4–5</th><th>5–6</th><th>6–7</th><th>7–8</th><th>8–9</th><th>&gt;9 Std.</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>Krippe</td><td>41 €</td><td>67 €</td><td>96 €</td><td>121 €</td><td>146 €</td><td>172 €</td><td>198 €</td><td>224 €</td><td>250 €</td></tr>
-                <tr><td>Kindergarten</td><td>38 €</td><td>48 €</td><td>58 €</td><td>69 €</td><td>79 €</td><td>90 €</td><td>100 €</td><td>—</td><td>—</td></tr>
-                <tr><td>Schulkinder</td><td>—</td><td>—</td><td>99 €</td><td>107 €</td><td>113 €</td><td>125 €</td><td>139 €</td><td>153 €</td><td>—</td></tr>
-              </tbody>
-            </table>
+          <h2>Besuchsgebühren für den Krippenplatz</h2>
+          <div className="callout sage">
+            <strong>Was ist eine Krippe?</strong> Eine Kinderkrippe betreut die
+            Kleinsten – Kinder von <strong>1 bis 3 Jahren</strong>, also in der Zeit
+            vor dem Kindergarten. Genau dafür ist der Mausegarten da.
           </div>
+          <p>
+            Die Höhe der Besuchsgebühr richtet sich nach der gewählten
+            Buchungszeit. Zieh den Regler, um den jeweiligen Höchstbetrag zu sehen:
+          </p>
+          <KrippenGebuehren />
 
           <p style={{ fontSize: "0.9rem", color: "var(--ink-soft)" }}>
             *Der zu zahlende Elternbeitrag hängt von der gewählten Buchungszeit und
