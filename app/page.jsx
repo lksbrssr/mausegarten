@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-art">
-          <img src="/images/gen/hero.jpeg" alt="Papierschnitt-Illustration der Isarauen: sanfte Hügel, ein Fluss und zwei spielende Kleinkinder" />
+          <img src="/images/hero-original.jpg" alt="Kinderzeichnung der Mausegarten-Maus mit Luftballon, Sonne und Blumen" />
         </div>
       </section>
 

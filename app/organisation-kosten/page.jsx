@@ -79,6 +79,21 @@ export default function OrgKosten() {
             Verfügung. Zudem ist ein Antrag auf Geschwisterermäßigung möglich. Mehr
             Infos erhalten Eltern am ersten Elternabend im KiTa-Jahr.
           </p>
+          <h2>Gebühren & Infos zum Download</h2>
+          <ul className="doclist">
+            <li>
+              <a href="/dokumente/kita-gebuehren-uebersicht-2019.pdf" target="_blank" rel="noopener noreferrer">
+                <span className="ic">PDF</span>
+                <span>KiTa-Gebühren – Übersicht<small>Gebührenübersicht der Landeshauptstadt München</small></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://stadt.muenchen.de/dam/jcr:4d4eba3f-8ee9-41f6-aca3-44161281948d/gebuehrenuebersicht.pdf" target="_blank" rel="noopener noreferrer">
+                <span className="ic">PDF</span>
+                <span>Gebührenübersicht (stadt.muenchen.de)<small>Aktuelle Gebührenstaffelung der Stadt München</small></span>
+              </a>
+            </li>
+          </ul>
           <p>
             <a href="https://stadt.muenchen.de/infos/kosten-kita-platz.html" target="_blank" rel="noopener noreferrer">
               Infos zu den KiTa-Gebühren der Stadt München →

@@ -42,7 +42,38 @@ export default function Konzept() {
               Obstzeit- und Wäschedienst (alle 11 Wochen, für eine gesamte Woche)
             </li>
             <li>Teilnahme an den Elternabenden (ca. alle 6–8 Wochen)</li>
-            <li>Übernahme eines „Amtes“ (siehe Organigramm)</li>
+            <li>
+              Übernahme eines „Amtes“ (siehe{" "}
+              <a href="/dokumente/organigramm.pdf" target="_blank" rel="noopener noreferrer">Organigramm</a>)
+            </li>
+          </ul>
+
+          <h2>Dokumente zum Download</h2>
+          <ul className="doclist">
+            <li>
+              <a href="/dokumente/konzept-2023.pdf" target="_blank" rel="noopener noreferrer">
+                <span className="ic">PDF</span>
+                <span>Unser pädagogisches Konzept 2023<small>Das vollständige Konzept als PDF</small></span>
+              </a>
+            </li>
+            <li>
+              <a href="/dokumente/schutzkonzept-2022.pdf" target="_blank" rel="noopener noreferrer">
+                <span className="ic">PDF</span>
+                <span>Schutzkonzept 2022<small>Schutzkonzept der Elterninitiative Mausegarten e.V.</small></span>
+              </a>
+            </li>
+            <li>
+              <a href="/dokumente/vereinssatzung-2022.pdf" target="_blank" rel="noopener noreferrer">
+                <span className="ic">PDF</span>
+                <span>Vereinssatzung (Sept. 2022)<small>Satzung des Vereins</small></span>
+              </a>
+            </li>
+            <li>
+              <a href="/dokumente/organigramm.pdf" target="_blank" rel="noopener noreferrer">
+                <span className="ic">PDF</span>
+                <span>Organigramm<small>Ämter und Aufgaben im Überblick</small></span>
+              </a>
+            </li>
           </ul>
         </div>
 

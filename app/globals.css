@@ -199,11 +199,14 @@ a:hover { text-decoration: underline; }
 .hero-art {
   border-radius: 28px;
   overflow: hidden;
-  background: var(--sky);
+  background: #fffdf8;
   min-height: 320px;
   display: flex;
+  padding: 10px;
+  border: 1px solid var(--line);
 }
-.hero-art svg, .hero-art img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.hero-art svg { width: 100%; height: 100%; display: block; object-fit: cover; }
+.hero-art img { width: 100%; height: 100%; display: block; object-fit: contain; }
 
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; }
@@ -327,6 +330,35 @@ table.fees td:first-child, table.fees th:first-child { text-align: left; backgro
 .footer-bottom { border-top: 1px solid var(--line); padding: 16px 24px; text-align: center; font-size: 0.82rem; color: var(--ink-soft); }
 
 .eyebrow { font-family: Georgia, serif; font-style: italic; color: var(--teal-dark); font-size: 1rem; }
+
+/* ---------- Document download list ---------- */
+.doclist { list-style: none; margin: 14px 0 6px; padding: 0; display: grid; gap: 10px; }
+.doclist a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.97rem;
+  transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
+}
+.doclist a:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 12px 26px -18px rgba(0,0,0,0.35); border-color: var(--teal); }
+.doclist .ic {
+  flex: none;
+  width: 34px; height: 34px;
+  display: grid; place-items: center;
+  background: var(--coral);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.doclist small { display: block; font-weight: 400; color: var(--ink-soft); font-size: 0.82rem; }
 
 /* ---------- Form ---------- */
 .form { max-width: 640px; margin: 10px 0 20px; }
