@@ -40,10 +40,17 @@ export default function Anmeldung() {
             <strong>Es besteht kein Anspruch auf Aufnahme.</strong>
           </p>
 
-          <h2>So bewerbt Ihr Euch</h2>
+          <h2 id="formular">So bewerbt Ihr Euch</h2>
           <p>
-            Wenn Du an einem Betreuungsplatz interessiert bist, drucke das
-            Anmeldeformular aus, fülle es aus und schicke es per Post an:
+            Am einfachsten bewerbt Ihr Euch direkt hier online. Die Felder
+            entsprechen unserem Anmeldeformular.
+          </p>
+          <AnmeldeFormular />
+
+          <h2>Alternativ: Bewerbung per Post</h2>
+          <p>
+            Lieber auf Papier? Du kannst das Anmeldeformular auch ausdrucken,
+            ausfüllen und per Post an uns schicken:
           </p>
           <div className="callout sage">
             <strong>Elterninitiative Mausegarten e.V.</strong><br />
@@ -52,7 +59,7 @@ export default function Anmeldung() {
             81541 München
           </div>
           <p>
-            <a href="/dokumente/anmeldung-mausegarten.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+            <a href="/dokumente/anmeldung-mausegarten.pdf" target="_blank" rel="noopener noreferrer" className="btn ghost">
               PDF-Anmeldeformular herunterladen →
             </a>
           </p>
@@ -60,9 +67,6 @@ export default function Anmeldung() {
             Bitte nutzt aus Datenschutzgründen nur unser Anmeldeformular. Schickt
             uns bitte keine Fotos und persönlichen Briefe. Vielen Dank!
           </p>
-
-          <h2 id="formular">Online-Bewerbung</h2>
-          <AnmeldeFormular />
         </div>
 
         <aside className="sidebar">

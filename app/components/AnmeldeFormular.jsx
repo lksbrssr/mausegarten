@@ -24,11 +24,6 @@ export default function AnmeldeFormular() {
 
   return (
     <form className="form" onSubmit={onSubmit} noValidate>
-      <p className="form-note">
-        Alternativ zur PDF könnt Ihr Euch auch direkt hier bewerben. Die Felder
-        entsprechen unserem Anmeldeformular.
-      </p>
-
       <fieldset>
         <legend>Kind</legend>
         <div className="form-row">
