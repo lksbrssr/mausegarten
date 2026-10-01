@@ -64,7 +64,7 @@ export default function OrgKosten() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Krippe</td><td>41 €</td><td>67 €</td><td>95 €</td><td>121 €</td><td>146 €</td><td>172 €</td><td>198 €</td><td>224 €</td><td>250 €</td></tr>
+                <tr><td>Krippe</td><td>41 €</td><td>67 €</td><td>96 €</td><td>121 €</td><td>146 €</td><td>172 €</td><td>198 €</td><td>224 €</td><td>250 €</td></tr>
                 <tr><td>Kindergarten</td><td>38 €</td><td>48 €</td><td>58 €</td><td>69 €</td><td>79 €</td><td>90 €</td><td>100 €</td><td>—</td><td>—</td></tr>
                 <tr><td>Schulkinder</td><td>—</td><td>—</td><td>99 €</td><td>107 €</td><td>113 €</td><td>125 €</td><td>139 €</td><td>153 €</td><td>—</td></tr>
               </tbody>
