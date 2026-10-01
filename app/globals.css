@@ -459,7 +459,7 @@ table.fees td:first-child, table.fees th:first-child { text-align: left; backgro
   font-size: 0.82rem;
   color: var(--ink-soft);
   background: var(--cream);
-  border: 1px dashed var(--line);
+  border: 1px solid var(--line);
   border-radius: 10px;
   padding: 10px 13px;
 }
