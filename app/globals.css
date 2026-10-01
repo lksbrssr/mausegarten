@@ -385,6 +385,25 @@ table.fees td:first-child, table.fees th:first-child { text-align: left; backgro
 
 .eyebrow { font-family: Georgia, serif; font-style: italic; color: var(--teal-dark); font-size: 1rem; }
 
+/* ---------- Segmented control ---------- */
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button {
+  flex: 1 1 auto;
+  min-width: 110px;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.seg button:hover { border-color: var(--teal); color: var(--ink); }
+.seg button.active { background: var(--teal); color: #fff; border-color: var(--teal); }
+
 /* ---------- Fee slider ---------- */
 .fee-slider {
   background: #fff;

@@ -41,12 +41,15 @@ export default function OrgKosten() {
 
           <h2>Kosten</h2>
           <div className="costgrid">
-            <div className="box"><div className="big">bis 111 €</div><div className="lbl">Monatl. Beitrag (volle Buchungszeit)*</div></div>
-            <div className="box"><div className="big">95 €</div><div className="lbl">Monatl. Essenspauschale</div></div>
-            <div className="box"><div className="big">100 €</div><div className="lbl">Monatl. Vereinsbeitrag</div></div>
+            <div className="box"><div className="big">95 €</div><div className="lbl">Monatl. Essensgeld</div></div>
+            <div className="box"><div className="big">10 €</div><div className="lbl">Monatl. Vereinsbeitrag</div></div>
             <div className="box"><div className="big">250 €</div><div className="lbl">Einmalige Aufnahmegebühr</div></div>
             <div className="box"><div className="big">500 €</div><div className="lbl">Einmalige Beitragskaution</div></div>
           </div>
+          <p style={{ fontSize: "0.9rem", color: "var(--ink-soft)" }}>
+            Hinzu kommt die monatliche Besuchsgebühr (Beitrag) – siehe Rechner
+            unten.
+          </p>
 
           <p>
             Wir sind eine Eltern-Kind-Initiative, die sich am EKI-Plus-Fördermodell
@@ -63,31 +66,24 @@ export default function OrgKosten() {
             vor dem Kindergarten. Genau dafür ist der Mausegarten da.
           </div>
           <p>
-            Die Höhe der Besuchsgebühr richtet sich nach der gewählten
-            Buchungszeit. Zieh den Regler, um den jeweiligen Höchstbetrag zu sehen:
+            Die Höhe der Besuchsgebühr richtet sich nach <strong>Haushaltseinkommen
+            und Buchungszeit</strong>. Wähle Deine Werte, um den monatlichen Beitrag
+            zu sehen:
           </p>
           <KrippenGebuehren />
 
           <p style={{ fontSize: "0.9rem", color: "var(--ink-soft)" }}>
-            *Der zu zahlende Elternbeitrag hängt von der gewählten Buchungszeit und
-            dem Haushaltseinkommen ab und liegt zwischen 0 € und 111 €. Die Prüfung
-            und Feststellung der Einkommensgruppe obliegt der Stadt München; hierzu
-            ist ein Antrag zu stellen. Die Formulare stellen wir gern zur
-            Verfügung. Zudem ist ein Antrag auf Geschwisterermäßigung möglich. Mehr
-            Infos erhalten Eltern am ersten Elternabend im KiTa-Jahr.
+            Die Prüfung und Feststellung der Einkommensgruppe obliegt der Stadt
+            München; hierzu ist ein Antrag zu stellen. Die Formulare stellen wir gern
+            zur Verfügung. Zudem ist ein Antrag auf Geschwisterermäßigung möglich.
+            Mehr Infos erhalten Eltern am ersten Elternabend im KiTa-Jahr.
           </p>
           <h2>Gebühren & Infos zum Download</h2>
           <ul className="doclist">
             <li>
-              <a href="/dokumente/kita-gebuehren-uebersicht-2019.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/dokumente/gebuehrenuebersicht-stadt-muenchen.pdf" target="_blank" rel="noopener noreferrer">
                 <span className="ic">PDF</span>
-                <span>KiTa-Gebühren – Übersicht<small>Gebührenübersicht der Landeshauptstadt München</small></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://stadt.muenchen.de/dam/jcr:4d4eba3f-8ee9-41f6-aca3-44161281948d/gebuehrenuebersicht.pdf" target="_blank" rel="noopener noreferrer">
-                <span className="ic">PDF</span>
-                <span>Gebührenübersicht (stadt.muenchen.de)<small>Aktuelle Gebührenstaffelung der Stadt München</small></span>
+                <span>Gebührenübersicht der Stadt München<small>Aktuelle Gebührenstaffelung (Krippe, Kindergarten, Hort)</small></span>
               </a>
             </li>
           </ul>
