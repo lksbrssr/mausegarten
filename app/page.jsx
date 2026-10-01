@@ -12,24 +12,27 @@ const cards = [
 export default function Home() {
   return (
     <div className="wrap">
-      <section className="hero">
-        <div className="hero-card">
-          <span className="eyebrow">Herzlich willkommen</span>
-          <h1>Geborgen groß werden an der Isar</h1>
-          <p>
-            Die Elterninitiative Mausegarten e.V. ist seit 2004 eine kleine,
-            familiäre Kinderkrippe in der Münchner Au — direkt an den Isarauen.
-            In einer Gruppe von <strong>12 Kindern</strong> begleiten feste
-            Bezugspersonen die Kleinen von 1–3 Jahren durch ihre ersten großen
-            Jahre.
-          </p>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
-            <Link href="/anmeldung" className="btn">Platz bewerben →</Link>
-            <Link href="/konzept" className="btn ghost">Unser Konzept</Link>
+      <section className="hero-full">
+        <img
+          className="hero-full-img"
+          src="/images/hero-original.jpg"
+          alt="Kinderzeichnung der Mausegarten-Maus mit Luftballon, Sonne und Blumen"
+        />
+        <div className="hero-full-overlay">
+          <div className="hero-full-text">
+            <h1>Geborgen groß werden an der Isar</h1>
+            <p>
+              Die Elterninitiative Mausegarten e.V. ist seit 2004 eine kleine,
+              familiäre Kinderkrippe in der Münchner Au — direkt an den Isarauen.
+              In einer Gruppe von <strong>12 Kindern</strong> begleiten feste
+              Bezugspersonen die Kleinen von 1–3 Jahren durch ihre ersten großen
+              Jahre.
+            </p>
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
+              <Link href="/anmeldung" className="btn">Platz bewerben →</Link>
+              <Link href="/konzept" className="btn ghost">Unser Konzept</Link>
+            </div>
           </div>
-        </div>
-        <div className="hero-art">
-          <img src="/images/hero-original.jpg" alt="Kinderzeichnung der Mausegarten-Maus mit Luftballon, Sonne und Blumen" />
         </div>
       </section>
 

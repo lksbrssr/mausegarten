@@ -213,6 +213,56 @@ a:hover { text-decoration: underline; }
   .hero-art { min-height: 240px; }
 }
 
+/* ---------- Full-width hero banner ---------- */
+.hero-full {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  margin-top: 0;
+  margin-bottom: 40px;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.hero-full-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+.hero-full-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  display: flex;
+}
+.hero-full-text {
+  max-width: 580px;
+  background: rgba(246, 242, 233, 0.9);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  padding: 30px 34px;
+  box-shadow: 0 20px 50px -28px rgba(0, 0, 0, 0.45);
+}
+.hero-full-text h1 { color: var(--ink); margin-bottom: 0.35em; }
+.hero-full-text p { color: var(--ink-soft); margin-bottom: 18px; }
+
+@media (max-width: 820px) {
+  .hero-full { min-height: 420px; }
+  .hero-full-text { padding: 24px; }
+}
+@media (max-width: 520px) {
+  .hero-full { min-height: 360px; }
+}
+
 /* ---------- Sections ---------- */
 .section { margin: 56px 0; }
 .section-head {
