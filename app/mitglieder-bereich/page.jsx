@@ -62,8 +62,6 @@ export default function MitgliederBereich() {
               </a>
             </li>
           </ul>
-
-          <p>Bitte besuchen Sie diese Seite bald wieder. Vielen Dank für ihr Interesse!</p>
         </div>
 
         <aside className="sidebar">
