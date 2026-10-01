@@ -29,7 +29,7 @@ export default function Home() {
               Jahre.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 8 }}>
-              <Link href="/anmeldung" className="btn">Platz bewerben →</Link>
+              <Link href="/anmeldung" className="btn">Bewerbung →</Link>
               <Link href="/konzept" className="btn ghost">Unser Konzept</Link>
             </div>
           </div>

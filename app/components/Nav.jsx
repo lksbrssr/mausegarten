@@ -48,7 +48,7 @@ export default function Nav() {
             className={`nav-cta ${isActive("/anmeldung") ? "active" : ""}`}
             onClick={() => setOpen(false)}
           >
-            Anmeldung →
+            Bewerbung →
           </Link>
         </nav>
       </div>
